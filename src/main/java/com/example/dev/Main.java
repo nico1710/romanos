@@ -3,14 +3,13 @@ package com.example.dev;
 import java.util.*;
 
 public class Main {
-    public static void main(String[] args) {
-        System.out.println(romanToDecimal("XIX"));
-    }
+    public static void main(String[] args) { }
+
     // funcion que convierta numero romano valido a decimal
     public static double romanToDecimal(String numRomano) {
         double resultado = 0, number = 0;
         // clave - valor
-        Map<Character, Integer> romanos = new HashMap<Character, Integer>();
+        Map<Character, Integer> romanos = new HashMap<>();
         romanos.put('I', 1);
         romanos.put('V', 5);
         romanos.put('X', 10);
